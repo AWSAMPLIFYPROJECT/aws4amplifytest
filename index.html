@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oceanic Energy Solutions (OES)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #222;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    header h1 {
+      z-index: 1;
+      font-size: 3rem;
+    }
+
+    main {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #0077b6;
+      margin-bottom: 1rem;
+    }
+
+    .business-section {
+      background: #e0f7fa;
+      padding: 2rem;
+      border-left: 5px solid #00b4d8;
+      border-radius: 8px;
+    }
+
+    .subscribe-container {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    input[type="email"] {
+      padding: 0.7rem;
+      width: 250px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 0.7rem 1.2rem;
+      border: none;
+      background: #0077b6;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background: #005f73;
+    }
+
+    footer {
+      background: #003745;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    footer p.credit {
+      margin-top: 2rem;
+      font-style: italic;
+      color: #a0c4ff;
+    }
+
+    @media (max-width: 600px) {
+      input[type="email"], input[type="submit"] {
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Oceanic Energy Solutions (OES)</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Why Ocean Power?</h2>
+      <p>OES Ocean power is a promising renewable energy source for several reasons. With over 70% of Earth's surface covered by oceans, they offer a vast and largely untapped energy resource that includes tidal, wave, ocean current, and thermal gradient energy.</p>
+      <p>This energy source is particularly reliable, as tidal and wave patterns are more predictable compared to other renewables like solar and wind. Additionally, the high density of water enables ocean energy systems to generate more power from smaller volumes than wind energy, making them an efficient choice. Ocean power also contributes to reducing greenhouse gas emissions since it does not produce carbon emissions during operation.</p>
+    </section>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>Oceanic Energy Solutions (OES), a new UK-based firm, is dedicated to developing solutions for harnessing ocean power. One of their innovative technologies to be released soon is advanced marine buoys. These buoys ensure safe navigation, monitor marine environments, and protect ecosystems. Equipped with sensors, they gather critical data for OES’s broader goal—commercial ocean-powered stations that supply energy to data centres, which are growing increasingly energy-intensive with the rise of AI.</p>
+    </section>
+
+    <section class="business-section">
+      <h2>Why Partner With OES?</h2>
+      <p>OES partners with businesses, governments, and research institutions seeking to advance clean energy. Whether you're a smart port operator, an AI-driven company, or a sustainability-driven brand, OES offers reliable, scalable, and eco-conscious energy systems that meet modern power demands while protecting our oceans.</p>
+    </section>
+
+    <section class="subscribe-container">
+      <h2>Subscribe for Updates</h2>
+      <p>Be the first to hear about product releases, pilot projects, and investment opportunities.</p>
+      <form method="get" action="http://localhost/Devops1/oessubscribers.php">
+        <input name="email" type="email" placeholder="Enter your email" required />
+        <input type="submit" value="Subscribe" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Oceanic Energy Solutions. All rights reserved.</p>
+    <a href='https://www.linkedin.com/in/okwudilinwangbo/' target="_blank"><p class="credit">Designed by Ernest Nwangbo for OES</p></a>
+  </footer>
+
+</body>
+</html>
