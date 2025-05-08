@@ -16,10 +16,10 @@ class dbSetup{
     private $dbname   = "assignment";
 	*/
 
-    private $servername = "devops.ct4qa9k3b3s3.us-east-1.rds.amazonaws.com";
-    private $username = "admin";
+	private $servername = "oesdb2.c58k8mecwnmd.eu-north-1.rds.amazonaws.com";
+    private $username = "oesdb2";
     private $password = "passworded";
-    private $dbname   = "devops";
+    private $dbname   = "oesdb2";
 	
 function __construct(){
 	@$this->dbConnect();
