@@ -126,7 +126,7 @@
           <div class="form_container">
             <form action="enrolStudent.php" method="post">
               <div>
-                <input type="text" required name="firstname" class="form-control" placeholder="Enter First Name"  value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname']; } ?>"  />
+                <input type="text" required name="firstname" class="form-control" placeholder="Enter First Name"   />
               </div>
               <div>
                 <input type="text" required name="lastname" class="form-control" placeholder="Enter Last Name" value="<?php if(isset($_POST['lastname'])){ echo $_POST['lastname']; } ?>" />
