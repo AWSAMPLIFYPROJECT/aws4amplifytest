@@ -9,9 +9,16 @@ die("
 
 class dbSetup{
 
+	/**
     private $servername = "localhost";
     private $username = "root";
     private $password = "";
+    private $dbname   = "assignment";
+	*/
+
+    private $servername = "devops.ct4qa9k3b3s3.us-east-1.rds.amazonaws.com";
+    private $username = "admin";
+    private $password = "passworded";
     private $dbname   = "assignment";
 	
 function __construct(){
