@@ -19,7 +19,7 @@ class dbSetup{
     private $servername = "devops.ct4qa9k3b3s3.us-east-1.rds.amazonaws.com";
     private $username = "admin";
     private $password = "passworded";
-    private $dbname   = "devops_db";
+    private $dbname   = "devops";
 	
 function __construct(){
 	@$this->dbConnect();
