@@ -32,6 +32,7 @@ function __construct(){
 }
 
 function dbConnect(){
+	try{
    // Create connection
 	$conn = @mysqli_connect($this->servername, $this->username, $this->password, $this->dbname);
 	// Check connection
@@ -46,6 +47,7 @@ function dbConnect(){
 			$msg = $conn->connect_error;
 		}else { $conn = $conn; }
 		return $conn;
+	}catch (Error $e){ echo $e->getMessage(); }
 }
 function getValidInput($item){
 	$con  = $this->dbConnect();
