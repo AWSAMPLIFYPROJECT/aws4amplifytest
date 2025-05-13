@@ -1050,6 +1050,7 @@ td{
 .dropdown {
   position: relative;
   display: inline-block;
+  color: red;
 }
 
 .dropdown-button {
