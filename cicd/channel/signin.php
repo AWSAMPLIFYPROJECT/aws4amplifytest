@@ -112,7 +112,7 @@ try {
     <div class="container">
       <div class="heading_container">
         <h2>
-            Signin to start using the system
+            Signin to start
         </h2>
       </div>
       <div class="row">
