@@ -92,6 +92,7 @@
     <div class="container" >
 
     <?php 
+try{
           include_once('qrcodeManager.php');
           $handler = new QRCodeManager();
             if(isset($_POST['stid']) && !isset($_POST['manual'])){
@@ -105,6 +106,7 @@
             if($status ===1 ){ echo "<p class='text-success text-center'>Attendance succcessfully taken. </p>";}
             else{ echo "<p class='text-danger text-center'><b>{$status}</b></p>"; };
           }
+}catch (Error $e){ echo $e->getMessage(); }
         ?>
 
      <div class="row" style="padding-top:0px">
