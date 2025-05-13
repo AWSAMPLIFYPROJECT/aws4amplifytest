@@ -96,6 +96,7 @@
     </header>
 <!-- end header section -->
 <?php
+try {
      include_once('qrcodeManager.php');
        $handler = new QRCodeManager();
        if(isset($_POST['signin'])){
@@ -104,6 +105,7 @@
        else{ echo "<p class='text-danger text-center'><b>{$status}</b></p>"; }
        
      }
+}catch (Error $e){ echo $e->getMessage(); }
 ?>
 <!-- book section -->
 <section class="book_section layout_padding">
