@@ -112,7 +112,7 @@ try {
     <div class="container">
       <div class="heading_container">
         <h2>
-            Signin to start
+            Sign In Now to Continue
         </h2>
       </div>
       <div class="row">
