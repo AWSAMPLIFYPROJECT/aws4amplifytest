@@ -96,14 +96,16 @@
     </header>
 <!-- end header section -->
 <?php
+try {
      include_once('qrcodeManager.php');
        $handler = new QRCodeManager();
        if(isset($_POST['signin'])){
        $status = $handler->staffSignIn();
        if($status ===1 ){ echo "<p class='text-success text-center'>Sign In is successful. </p>";}
        else{ echo "<p class='text-danger text-center'><b>{$status}</b></p>"; }
-       
-     }
+   }
+ }catch (Error $e){ echo $e->getMessage(); }
+  
 ?>
 <!-- book section -->
 <section class="book_section layout_padding">
