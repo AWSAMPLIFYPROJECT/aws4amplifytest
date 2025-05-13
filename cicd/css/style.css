@@ -9,6 +9,9 @@ body {
 .layout_padding {
   padding: 90px 0;
 }
+.myLabel{
+  color: #fff;
+}
 
 .layout_padding2 {
   padding: 75px 0;
@@ -973,7 +976,6 @@ a:focus {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.myLabel { color: white;}
 
 .footer_section .footer_social a {
   display: -webkit-box;
@@ -1040,8 +1042,50 @@ td{
   border: none;
   cursor: pointer;
 }
-
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
   background-color:  rgb(243, 194, 89);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: transparent; /* No background for main menu */
+  color: #fff; /* Text color white */
+  padding: 10px 20px;
+  border: 2px solid #fff; /* Optional: Adds a border for visibility */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none; /* Remove the outline */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(243, 194, 89); /* Submenu background color */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #fff; /* Text color for submenu items */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(200, 170, 80, 0.9);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
